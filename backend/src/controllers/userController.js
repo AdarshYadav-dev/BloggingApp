@@ -270,6 +270,7 @@ export const getProfile = async (req, res) => {
 // forget password
 export const forgetPassword = async (req, res) => {
   try {
+    await dbconnect();
     const { email } = req.body;
     const existing_user = await user.findOne({ email: email });
 
@@ -319,6 +320,7 @@ export const forgetPassword = async (req, res) => {
 // otp check
 export const otpCheck = async (req, res) => {
   try {
+    await dbconnect();
     const { otp, email } = req.body;
 
     const otpNumber = Number(otp);

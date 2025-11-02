@@ -71,6 +71,10 @@ A full-stack **secure and feature-rich Notes Application** built using the **MER
 
 ---
 
+## Update 
+Added proper .gitignore setup to prevent pushing .env files.
+
+
 ## 🧑‍💻 Developer
 
 **Suvajit Saha**
